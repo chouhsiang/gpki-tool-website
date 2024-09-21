@@ -1,5 +1,5 @@
 var script = document.createElement("script");
-script.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js";
+script.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js";
 document.body.appendChild(script);
 
 fetch("https://chouhsiang.github.io/gpki-tool-website/navbar.html") 
