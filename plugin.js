@@ -1,8 +1,4 @@
-export function loadBootstrap() {
-  import * as bootstrap from 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
-  window.bootstrap = bootstrap;
-  
-  fetch("https://chouhsiang.github.io/gpki-tool-website/navbar.html") 
+fetch("https://chouhsiang.github.io/gpki-tool-website/navbar.html") 
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -24,4 +20,3 @@ export function loadBootstrap() {
       }
       document.getElementById("gogithub").addEventListener("click", gogithub);
     });
-}
