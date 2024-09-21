@@ -26,8 +26,14 @@
     <p class="col-md-8 mb-0 text-body-secondary">© 2024 周詳 hchou@moda.gov.tw<br>本網站採用 CC0 1.0，您可以自由使用、修改和發布本網站的內容，無需徵得許可</p>
 
     <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a id="gocodepen" class="nav-link px-2 text-body-secondary">本頁 CodePen</a></li>
-      <li class="nav-item"><a id="gogithub" class="nav-link px-2 text-body-secondary">本頁 GitHub</a></li>
+      <li class="nav-item">
+        <a href="#" onclick="window.open('https://codepen.io/chouhsiang/pen/' + window.location.pathname.split('/').pop(), '_blank'); return false;"
+          class="nav-link px-2 text-body-secondary">本頁 CodePen</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" onclick="window.open('https://github.com/chouhsiang/codepen/blob/gh-pages/'  + window.location.pathname.split('/').pop() + '.html', '_blank'); return false;"
+          class="nav-link px-2 text-body-secondary">本頁 GitHub</a>
+      </li>
     </ul>
   </div>
 </footer>
