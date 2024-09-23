@@ -5,5 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then((htmlContent) => {
       document.body.insertAdjacentHTML('beforeend', htmlContent);
+      var id = window.location.pathname.split("/").pop();
+      document
+        .querySelectorAll(".src-link")
+        .forEach((el) => (el.href = el.href.replace("$ID", id)));
     });
 });
